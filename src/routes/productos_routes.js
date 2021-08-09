@@ -17,7 +17,7 @@ routes.get('/listar/:id', (req, res) => {
 });
 
 routes.get('/vista', (req, res) => {
-  res.render('main', productos.showProductos());
+  res.render('index', productos.showProductos());
 });
 
 // Rutas POST

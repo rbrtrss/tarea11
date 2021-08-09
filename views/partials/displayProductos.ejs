@@ -1,0 +1,21 @@
+<h3>Lista de Productos</h3>
+<% if (productosExisten) { %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th></th>
+    </tr>
+  </thead>
+  <% productos.forEach(producto => { %>
+  <tr>
+    <td><%= producto.title %></td>
+    <td><%= producto.price %></td>
+    <td><img width="50px" src="<%= producto.thumbnail %>" alt="" /></td>
+  </tr>
+  <% }) %>
+</table>
+<% } else { %>
+<h4><%= error %></h4>
+<% } %>

@@ -9,7 +9,7 @@ const PORT = 3000;
 const app = express();
 
 app.set('views', path.resolve(__dirname, '../views'));
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
 const server = app.listen(PORT, () => {
   console.log(`Levantado en el puerto ${PORT}`);
